@@ -1,4 +1,4 @@
-cd app/
+cd /app
 ls
 # Start rasa server with nlu model
 echo 'hello'
