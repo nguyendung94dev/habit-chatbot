@@ -1,0 +1,62 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - habit_create
+  - habit_suggest
+  - habit_create_confirm
+  - habit_learning_english
+  - habit_go_to_bed
+  - habit_wake_up
+  - habit_reading
+  - habit_running
+  - confirm_time_line
+
+responses:
+  utter_greet:
+  - text: "Hi! Bạn khỏe không."
+  - text: "Xin chào! Hôm nay bạn thế nào."
+  - text: "Chào ngày mới!"
+  
+  utter_cheer_up:
+  - text: "Vui lên nào ^_^"
+    image: "https://i.pinimg.com/originals/91/1f/27/911f27947e0565bd9f6c36af3c1ef7e0.jpg"
+
+  utter_did_that_help:
+  - text: "Như vậy có làm bạn vui hơn không"
+
+  utter_happy:
+  - text: "Tuyệt vời"
+
+  utter_goodbye:
+  - text: "Tạm biệt. Hẹn gặp lại bạn sau."
+
+  utter_iamabot:
+  - text: "Tôi là chatbot được phát triển bởi RASA và được dạy bởi Mr. Tài"
+  
+  utter_habit_create:
+  - text: "Tuyệt vời! Bạn muốn tạo thói quen về lĩnh vực nào?"
+  - text: "Hay lắm, tôi sẽ giúp bạn quản lí tiến độ thói quen. Giờ hãy nói tôi nghe thói quen bạn cần tạo?"
+  
+  utter_habit_suggest:
+  - text: "Tôi có một vài gợi ý cho bạn nè: chạy bộ, dậy sớm, ngủ sớm, học tiếng anh chẳng hạn"
+  
+  utter_habit_time_line:
+  - text: "Bạn muốn tôi nhắc thói quen này với bạn vào lúc nào"
+  - text: "Bạn muốn khi nào thực hiện nó"
+  - text: "Bạn muốn thực hiện nó hàng ngày vào lúc nào"
+  - text: "Khi nào bạn sẽ thực hiện nó"
+  
+  utter_habit_remind_confirm:
+  - text: "Tuyệt vời! Tôi sẽ nhắc nhở bạn thực hiện đúng giờ."
+  - text: "Đã ghi nhớ thói quen. Tôi sẽ giúp bạn thực hiện."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,53 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+  
+- story: create habit
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: habit_create
+  - action: utter_habit_create
+  - intent: habit_suggest
+  - action: utter_habit_suggest
+  - intent: habit_learning_english
+  - action: utter_habit_time_line
+  - intent: habit_go_to_bed
+  - action: utter_habit_time_line
+  - intent: habit_wake_up
+  - action: utter_habit_time_line
+  - intent: habit_reading
+  - action: utter_habit_time_line
+  - intent: habit_running
+  - action: utter_habit_time_line
+  - intent: confirm_time_line
+  - action: utter_habit_remind_confirm
+  - intent: goodbye
+  - action: utter_goodbye

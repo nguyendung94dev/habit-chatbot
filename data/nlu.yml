@@ -1,0 +1,237 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - xin chào
+    - chào
+    - chào đằng ấy
+    - đang làm gì đó
+    - khỏe không
+    - biết tôi không
+    - ổn không
+    - alo
+
+- intent: goodbye
+  examples: |
+    - good bye
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - bye bye
+    - see you later
+    - tạm biệt
+    - hẹn gặp lại
+    - vĩnh biệt
+    - quay lại sau
+    - biến đi
+    - cút đi
+    - go away
+    - tránh xa tôi ra
+    - đi chỗ khác
+
+- intent: affirm
+  examples: |
+    - yes
+    - đúng rồi
+    - đồng ý
+    - okay
+    - ok
+
+- intent: deny
+  examples: |
+    - no
+    - đéo
+    - không được
+    - không đúng
+    - sai rồi
+    - làm lại
+    - tệ quá
+    - không phải
+    - chưa đúng
+
+- intent: mood_great
+  examples: |
+    - vui quá
+    - tuyệt vời
+    - quá đỉnh
+    - hay quá
+    - giỏi quá
+    - rất tốt
+    - hay lắm
+    - đỉnh cao
+    - vi diệu
+    - pro quá
+    - good
+    - được đó
+    - hay đấy
+
+- intent: mood_unhappy
+  examples: |
+    - tôi không được vui
+    - tôi cảm thấy buồn
+    - tôi rất buồn
+    - hôm nay buồn
+    - hôm nay không được vui
+    - tôi buồn quá
+    - tôi chán quá
+    - hôm nay chán quá
+    - ngày tồi tệ
+    - bực mình
+    - bực bội
+    - buồn chán
+    - tôi khóc
+    - tôi không vui
+    - tôi muốn chết
+    - tôi khó chịu
+    - mệt
+    - tôi cảm thấy mệt
+    - khó ở
+
+- intent: bot_challenge
+  examples: |
+    - bạn là một con bot
+    - bạn là bot
+    - bạn là người máy
+    - bạn là người
+    - bạn là con người
+    - bạn có phải là người máy
+    - bạn có phải là con người
+    - bạn là do con người tạo ra
+    - ai tạo ra bạn
+    - bạn tên gì
+    - bạn biết suy nghĩ như con người
+    
+- intent: habit_create
+  examples: |
+    - tạo thói quen mới
+    - tôi muốn tạo thói quen mới
+    - lập kế hoạch
+    - tạo thói quen hàng ngày
+    - tạo một thói quen mới
+    - tạo thói quen
+    
+- intent: habit_running
+  examples: |
+    - chạy bộ hàng ngày
+    - tạo thói quen chạy bộ
+    - muốn chạy bộ hàng ngày
+    - chạy bộ vào sáng sớm
+    - chạy bộ mỗi ngày
+    
+- intent: habit_reading
+  examples: |
+    - đọc sách
+    - đọc sách hàng ngày
+    - đọc sách vào lúc
+    - đọc sách vào buổi sáng
+    - đọc sách vào buổi tối
+    - đọc sách vào buổi trưa
+    - đọc sách vào buổi chiều
+    - đọc sách vào ban đêm
+    - đọc sách vào ban ngày
+    - tạo thói quen đọc sách
+    - lập kế hoạch đọc sách hàng ngày 
+
+- intent: habit_wake_up
+  examples: |
+    - dậy sớm
+    - thức dậy mỗi ngày
+    - dậy sớm đi học 
+    - dậy sớm làm gì đó
+    - dậy sớm làm việc
+    - thức dậy sớm
+    - thức dậy làm việc
+    - thức dậy đi học
+    - dậy đúng giờ
+    - thức dậy đúng giờ
+
+- intent: habit_go_to_bed
+  examples: |
+    - ngủ sớm
+    - ngủ đúng giờ
+    - không ngủ trễ
+    - không thức khuy
+    - đi ngủ sớm
+    - đi ngủ đúng giờ
+    - lên giường đúng giờ
+    - ngủ đủ giấc
+    - không ngủ trễ
+
+- intent: habit_learning_english
+  examples: |
+    - học tiếng anh
+    - học english
+    - học ngữ pháp tiếng anh
+    - học từ vựng
+    - cải thiện tiếng anh
+    - học từ mới tiếng anh
+    - học tiếng anh từ mới
+    
+- intent: habit_suggest
+  examples: |   
+    - gợi ý thói quen
+    - không có ý tưởng
+    - không biết
+    - gợi ý cho tôi
+    - thói quen gì hay
+    - giúp tôi chọn 
+    - thói quen là gì
+    - các loại thói quen
+    
+- intent: confirm_time_line
+  examples: |   
+    - thực hiện hàng ngày vào lúc
+    - thực hiện vào lúc
+    - thực hiện hàng tuần vào lúc
+    - thực hiện hàng tháng vào lúc
+    - thực hiện hàng năm vào lúc
+    - thực hiện hàng đêm vào lúc
+    - thực hiện hàng sáng vào lúc
+    - vào lúc 1 giờ
+    - vào lúc 2 giờ
+    - vào lúc 3 giờ
+    - vào lúc 4 giờ
+    - vào lúc 5 giờ
+    - vào lúc 6 giờ
+    - vào lúc 7 giờ
+    - vào lúc 8 giờ
+    - vào lúc 9 giờ
+    - vào lúc 10 giờ
+    - vào lúc 11 giờ
+    - vào lúc 12 giờ
+    - vào lúc 0 giờ
+    - vào lúc 1 giờ sáng
+    - vào lúc 1 giờ chiều
+    - vào lúc 2 giờ sáng
+    - vào lúc 2 giờ chiều
+    - vào lúc 8 giờ 30 phút sáng
+    - vào lúc 10 giờ 30 phút sáng
+    - vào lúc 10h30 hằng ngày
+    - vào lúc 0h00 hằng ngày
+    - vào lúc 0:00 hằng ngày
+    - vào lúc 0:00 hằng ngày
+    - hằng ngày vào lúc 0 giờ
+    - hằng ngày vào lúc 1 giờ
+    - hằng ngày vào lúc 2 giờ
+    - hằng ngày vào lúc 3 giờ
+    - hằng ngày vào lúc 12:00
+    - hằng ngày vào lúc 08:00
+    - hằng ngày vào lúc 07:00
+    - hằng ngày vào lúc 7:00
+    - hằng ngày vào lúc 9:00
+    - hằng ngày vào lúc 9:00    

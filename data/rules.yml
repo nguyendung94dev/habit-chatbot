@@ -1,0 +1,53 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  
+- rule: Say create habit anytime the user want create a new habit
+  steps:
+  - intent: habit_create
+  - action: utter_habit_create
+
+- rule: Say create habit running when the user say running
+  steps:
+  - intent: habit_running
+  - action: utter_habit_time_line
+  
+- rule: Say create habit reading when the user say reading
+  steps:
+  - intent: habit_reading
+  - action: utter_habit_time_line
+  
+- rule: Say create habit wake up when the user say wake up
+  steps:
+  - intent: habit_wake_up
+  - action: utter_habit_time_line
+  
+- rule: Say create habit go to bed when the user say go to bed
+  steps:
+  - intent: habit_go_to_bed
+  - action: utter_habit_time_line
+  
+- rule: Say create habit learning when the user say learning
+  steps:
+  - intent: habit_learning_english
+  - action: utter_habit_time_line
+  
+- rule: Say suggest habit when the user say suggest
+  steps:
+  - intent: habit_suggest
+  - action: utter_habit_suggest
+  
+- rule: Say confirm habit when the user confirm habit
+  steps:
+  - intent: confirm_time_line
+  - action: utter_habit_remind_confirm
