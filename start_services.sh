@@ -1,3 +1,3 @@
-cd app/
+cd /app/
 # Start rasa server with nlu model
-rasa run --model models --enable-api --cors "*" --credentials credentials.yml --debug -p 5005
+rasa run --model models --enable-api --cors "*" --credentials credentials.yml --debug -p $PORT
