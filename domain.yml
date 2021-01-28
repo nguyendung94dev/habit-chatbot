@@ -24,6 +24,10 @@ responses:
   - text: "Xin chào! Hôm nay bạn thế nào."
   - text: "Chào ngày mới!"
   
+  utter_help:
+  - text: "Tôi giúp được gì cho bạn?"
+  - text: "Xin lỗi, tôi có thể làm gì cho bạn đây?"
+  
   utter_cheer_up:
   - text: "Vui lên nào ^_^"
     image: "https://i.pinimg.com/originals/91/1f/27/911f27947e0565bd9f6c36af3c1ef7e0.jpg"
