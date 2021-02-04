@@ -29,7 +29,7 @@ stories:
   - intent: deny
   - action: utter_goodbye
   
-- story: create habit
+- story: create habit learning english
   steps:
   - intent: greet
   - action: utter_greet
@@ -39,19 +39,71 @@ stories:
   - action: utter_habit_suggest
   - intent: habit_learning_english
   - action: utter_habit_time_line
-  - intent: habit_go_to_bed
-  - action: utter_habit_time_line
-  - intent: habit_wake_up
-  - action: utter_habit_time_line
-  - intent: habit_reading
-  - action: utter_habit_time_line
+  - intent: confirm_time_line
+  - action: utter_habit_remind_confirm
+  - intent: goodbye
+  - action: utter_goodbye
+  
+- story: create habit running
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: habit_create
+  - action: utter_habit_create
+  - intent: habit_suggest
+  - action: utter_habit_suggest
   - intent: habit_running
   - action: utter_habit_time_line
   - intent: confirm_time_line
   - action: utter_habit_remind_confirm
   - intent: goodbye
   - action: utter_goodbye
+ 
+- story: create habit reading
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: habit_create
+  - action: utter_habit_create
+  - intent: habit_suggest
+  - action: utter_habit_suggest
+  - intent: habit_reading
+  - action: utter_habit_time_line
+  - intent: confirm_time_line
+  - action: utter_habit_remind_confirm
+  - intent: goodbye
+  - action: utter_goodbye
   
+- story: create habit wake-up
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: habit_create
+  - action: utter_habit_create
+  - intent: habit_suggest
+  - action: utter_habit_suggest
+  - intent: habit_wake_up
+  - action: utter_habit_time_line
+  - intent: confirm_time_line
+  - action: utter_habit_remind_confirm
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: create habit go to bed
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: habit_create
+  - action: utter_habit_create
+  - intent: habit_suggest
+  - action: utter_habit_suggest
+  - intent: habit_go_to_bed
+  - action: utter_habit_time_line
+  - intent: confirm_time_line
+  - action: utter_habit_remind_confirm
+  - intent: goodbye
+  - action: utter_goodbye 
+ 
 - story: create habit 1
   steps:
   - intent: habit_create

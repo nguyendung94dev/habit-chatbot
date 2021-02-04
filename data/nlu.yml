@@ -123,7 +123,9 @@ nlu:
     - lập kế hoạch
     - tạo thói quen hàng ngày
     - tạo một thói quen mới
+    - tạo muốn tạo một thói quen mới
     - tạo thói quen
+    - tôi muốn tạo một thói quen hằng ngày
     
 - intent: habit_running
   examples: |
@@ -234,7 +236,12 @@ nlu:
     - hằng ngày vào lúc 07:00
     - hằng ngày vào lúc 7:00
     - hằng ngày vào lúc 9:00
-    - hằng ngày vào lúc 9:00
+    - hằng ngày vào lúc 9h
+    - hằng ngày vào lúc 8h
+    - hằng ngày vào lúc 7h
+    - hằng ngày vào lúc 7h30
+    - hằng ngày vào lúc 8h30
+    - hằng ngày vào lúc 8h30
     - 0h hằng ngày
     - 1h hằng ngày
     - 2h hằng ngày
